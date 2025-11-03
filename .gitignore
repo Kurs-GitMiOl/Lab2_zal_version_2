@@ -21,7 +21,7 @@ pyvenv.cfg
 # ===========================
 # PYTEST I TESTY
 # ===========================
-.pytest_cache/
+#.pytest_cache/
 .cache/
 test_results/
 *.log
