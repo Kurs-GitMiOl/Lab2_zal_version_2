@@ -1,27 +1,49 @@
-# Pliki Pythona
+# ===========================
+# PYTHON PODSTAWOWE
+# ===========================
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
 
-# Środowisko wirtualne
+# ===========================
+# ŚRODOWISKO WIRTUALNE
+# ===========================
 venv/
 .env/
 .venv/
+env/
+ENV/
+Scripts/
+Lib/
+Include/
+pyvenv.cfg
 
-# Pliki z testów i pokrycia
-htmlcov/
-.coverage
-coverage.xml
+# ===========================
+# PYTEST I TESTY
+# ===========================
+.pytest_cache/
+.cache/
+test_results/
+*.log
+*.tmp
 
-# PyCharm / JetBrains
+# ===========================
+# PYCHARM / JETBRAINS
+# ===========================
 .idea/
 *.iml
 
-# Pliki systemowe
-.DS_Store
+# ===========================
+# PLIKI SYSTEMOWE WINDOWS
+# ===========================
 Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# Inne
-*.log
-*.tmp
+# ===========================
+# INNE (pliki tymczasowe, backupy)
+# ===========================
+*.bak
+*.swp
+*.swo
+*.orig
