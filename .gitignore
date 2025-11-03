@@ -1,0 +1,27 @@
+# Pliki Pythona
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Środowisko wirtualne
+venv/
+.env/
+.venv/
+
+# Pliki z testów i pokrycia
+htmlcov/
+.coverage
+coverage.xml
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+
+# Inne
+*.log
+*.tmp
