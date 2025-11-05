@@ -1,51 +1,68 @@
-# ===========================
-# PYTHON PODSTAWOWE
-# ===========================
+# ============================================
+# Python / PyCharm project .gitignore (Windows)
+# ============================================
+
+# --- System files (Windows) ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# --- Python cache & compiled files ---
 __pycache__/
 *.py[cod]
-*$py.class
+*.so
+*.egg
+*.egg-info/
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.log
 
-# ===========================
-# ŚRODOWISKO WIRTUALNE
-# ===========================
+# --- Virtual environments ---
 venv/
 .env/
 .venv/
 env/
 ENV/
-Scripts/
-Lib/
-Include/
-pyvenv.cfg
+Pipfile.lock
+poetry.lock
 
-# ===========================
-# PYTEST I TESTY
-# ===========================
-# .pytest_cache/
-.cache/
-# test_results/
-*.log
-*.tmp
-
-# ===========================
-# PYCHARM / JETBRAINS
-# ===========================
+# --- IDE settings ---
 .idea/
+.vscode/
 *.iml
 
-# ===========================
-# PLIKI SYSTEMOWE WINDOWS
-# ===========================
-Thumbs.db
-ehthumbs.db
-Desktop.ini
+# --- Test & coverage files ---
+.coverage
+coverage.xml
+.cache/
+.pytest_cache/
 
-# ===========================
-# INNE (pliki tymczasowe, backupy)
-# ===========================
+# --- Allow HTML coverage report ---
+!htmlcov/
+htmlcov/.gitignore  # optional, if you add .gitignore inside htmlcov
+
+# --- Build / distribution directories ---
+build/
+dist/
+*.spec
+
+# --- Temporary or generated files ---
+*.tmp
 *.bak
 *.swp
 *.swo
-*.orig
-# zapenia dodanie htmlcov
-!htmlcov/
+
+# --- Jupyter notebooks checkpoints ---
+.ipynb_checkpoints/
+
+# --- macOS (if you ever move repo) ---
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Other ---
+*.sqlite3
